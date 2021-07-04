@@ -1,0 +1,22 @@
+.sign-button {
+  background-color: $accent-color;
+  color: $white-color;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+
+  border: transparent;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__modal-form {
+    align-self: center;
+  }
+}

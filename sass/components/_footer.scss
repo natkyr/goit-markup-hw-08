@@ -1,0 +1,80 @@
+.footer {
+  background: $background-dark-color;
+  color: $white-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__address {
+    margin-top: 20px;
+  }
+}
+
+.address-list {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  font-style: normal;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $text-color;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $white-color;
+  }
+}
+
+.join-us {
+  margin-left: 70px;
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+/* Mailing subscription */
+.mailing {
+  margin-left: auto;
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__block {
+    display: flex;
+  }
+
+  &__email {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    color: $white-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    background-color: $background-dark-color;
+  }
+  &__email:focus,
+  &__email:focus {
+    border-color: $accent-color;
+  }
+}
