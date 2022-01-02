@@ -1,28 +1,40 @@
 .customers {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
   &__title {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.171;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
 }
 
 .customers-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -30px;
 
   &__item {
     color: $icons-color;
-    width: 170px;
+    width: 210px;
     height: 92px;
-  }
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__link {
