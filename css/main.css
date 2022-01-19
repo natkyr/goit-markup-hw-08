@@ -820,17 +820,42 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__address {
   margin-top: 20px;
+}
+
+.footer-contacts {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-bottom: 0;
+  }
 }
 
 .address-list {
@@ -855,7 +880,14 @@ img {
 }
 
 .join-us {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .join-us {
+    margin-bottom: 0;
+  }
 }
 
 .join-us__title {
@@ -869,7 +901,13 @@ img {
 
 /* Mailing subscription */
 .mailing {
-  margin-left: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing {
+    text-align: left;
+  }
 }
 
 .mailing__title {
@@ -885,18 +923,55 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mailing__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .mailing__email {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   outline: none;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing__email {
+    width: 358px;
+  }
 }
 
 .mailing__email:focus, .mailing__email:focus {

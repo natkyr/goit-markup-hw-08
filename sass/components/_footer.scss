@@ -5,15 +5,28 @@
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &__address {
     margin-top: 20px;
   }
 }
-
+.footer-contacts {
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
 .address-list {
   font-size: 14px;
   line-height: 1.714;
@@ -35,7 +48,11 @@
 }
 
 .join-us {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 
   &__title {
     margin-bottom: 16px;
@@ -49,7 +66,12 @@
 
 /* Mailing subscription */
 .mailing {
-  margin-left: auto;
+  //margin-left: auto;
+  text-align: center;
+  @media screen and(min-width: 1200px) {
+    text-align: left;
+  }
+
   &__title {
     margin-bottom: 16px;
     font-weight: 700;
@@ -60,18 +82,33 @@
   }
   &__block {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: baseline;
+    }
   }
 
   &__email {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
     margin-right: 12px;
+    margin-bottom: 20px;
     color: $white-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     outline: none;
     background-color: $background-dark-color;
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
   &__email:focus,
   &__email:focus {
